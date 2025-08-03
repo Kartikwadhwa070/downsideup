@@ -12,6 +12,12 @@ public class WorldFlipper : MonoBehaviour
 
     private bool isFlipping = false;
     private bool isFlipped = false;
+    private Collider myTrigger;
+
+    private void Awake()
+    {
+        myTrigger = GetComponent<Collider>();
+    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -20,7 +26,7 @@ public class WorldFlipper : MonoBehaviour
         if (other.CompareTag("Player") && !isFlipping)
         {
             Debug.Log("Player detected. Starting world flip.");
-            StartCoroutine(FlipWorldSmoothly());
+            StartCoroutine(FlipWorldSmoothly(other));
         }
         else if (!other.CompareTag("Player"))
         {
@@ -32,10 +38,18 @@ public class WorldFlipper : MonoBehaviour
         }
     }
 
-    IEnumerator FlipWorldSmoothly()
+    IEnumerator FlipWorldSmoothly(Collider playerCollider)
     {
         isFlipping = true;
 
+        // Disable trigger temporarily
+        if (myTrigger != null)
+        {
+            myTrigger.enabled = false;
+            Debug.Log("Trigger temporarily disabled.");
+        }
+
+        // Smooth world rotation
         Quaternion startRotation = worldParent.rotation;
         Quaternion targetRotation = startRotation * Quaternion.Euler(180f, 0f, 0f);
 
@@ -52,12 +66,20 @@ public class WorldFlipper : MonoBehaviour
         worldParent.rotation = targetRotation;
         Debug.Log("World flip complete.");
 
+        // Move snow particle system down by 20 units
         if (snowParticle != null)
         {
-            // Move particle system down by 20 units
             Vector3 currentPos = snowParticle.transform.position;
             snowParticle.transform.position = currentPos + new Vector3(0, -20f, 0);
             Debug.Log("Snow particle system moved down by 20 units.");
+        }
+
+        // Re-enable trigger after a small delay
+        yield return new WaitForSeconds(0.5f);
+        if (myTrigger != null)
+        {
+            myTrigger.enabled = true;
+            Debug.Log("Trigger re-enabled.");
         }
 
         isFlipped = !isFlipped;
