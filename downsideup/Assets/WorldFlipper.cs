@@ -42,11 +42,11 @@ public class WorldFlipper : MonoBehaviour
     {
         isFlipping = true;
 
-        // Disable trigger temporarily
+        // Disable trigger permanently
         if (myTrigger != null)
         {
             myTrigger.enabled = false;
-            Debug.Log("Trigger temporarily disabled.");
+            Debug.Log("Trigger disabled permanently.");
         }
 
         // Smooth world rotation
@@ -74,13 +74,7 @@ public class WorldFlipper : MonoBehaviour
             Debug.Log("Snow particle system moved down by 20 units.");
         }
 
-        // Re-enable trigger after a small delay
-        yield return new WaitForSeconds(0.5f);
-        if (myTrigger != null)
-        {
-            myTrigger.enabled = true;
-            Debug.Log("Trigger re-enabled.");
-        }
+        // Do NOT re-enable trigger
 
         isFlipped = !isFlipped;
         isFlipping = false;
