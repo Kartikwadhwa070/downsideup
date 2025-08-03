@@ -10,6 +10,8 @@ public class WorldFlipper : MonoBehaviour
     [Header("Snow Particle System")]
     public ParticleSystem snowParticle;   // Snow particle system
 
+    public static bool worldHasFlipped = false; // <-- Global flip status
+
     private bool isFlipping = false;
     private bool isFlipped = false;
     private Collider myTrigger;
@@ -74,9 +76,11 @@ public class WorldFlipper : MonoBehaviour
             Debug.Log("Snow particle system moved down by 20 units.");
         }
 
-        // Do NOT re-enable trigger
-
         isFlipped = !isFlipped;
         isFlipping = false;
+
+        // ✅ Set global flip flag
+        worldHasFlipped = true;
+        Debug.Log("Global worldHasFlipped = true");
     }
 }
