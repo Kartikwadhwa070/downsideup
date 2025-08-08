@@ -27,6 +27,12 @@ public class WorldFlipper : MonoBehaviour
 
         if (other.CompareTag("Player") && !isFlipping)
         {
+            if (myTrigger != null)
+            {
+                myTrigger.enabled = false;
+                Debug.Log("Trigger disabled immediately upon use.");
+            }
+
             Debug.Log("Player detected. Starting world flip.");
             StartCoroutine(FlipWorldSmoothly(other));
         }
@@ -39,6 +45,7 @@ public class WorldFlipper : MonoBehaviour
             Debug.Log("Flip is already in progress.");
         }
     }
+
 
     IEnumerator FlipWorldSmoothly(Collider playerCollider)
     {
