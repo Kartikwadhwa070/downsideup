@@ -5,6 +5,7 @@ public class BossController : MonoBehaviour
     [Header("Boss Settings")]
     public float moveSpeed = 3f;
     public float health = 100f;
+    public float maxHealth = 100f;
     public Transform player;
     public float rotationSpeed = 90f; // degrees per second for X-axis rotation
 
@@ -35,6 +36,7 @@ public class BossController : MonoBehaviour
     public void TakeDamage(float damageAmount)
     {
         health -= damageAmount;
+        health = Mathf.Clamp(health, 0, maxHealth); 
         Debug.Log("Boss Health: " + health);
 
         if (health <= 0)
@@ -42,6 +44,7 @@ public class BossController : MonoBehaviour
             Die();
         }
     }
+
 
     private void Die()
     {
