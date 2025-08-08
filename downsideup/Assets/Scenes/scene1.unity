@@ -4031,7 +4031,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -5032,6 +5032,119 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4136192201452185631, guid: 6be40c7c8da11824d95fe693bc07d70b, type: 3}
+--- !u!1001 &1743031424
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3621929207693279488, guid: ed33155f06b4c0a46b624641a231c27b, type: 3}
+      propertyPath: m_Name
+      value: NarrationCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 5750390021012620288, guid: ed33155f06b4c0a46b624641a231c27b, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5750390021012620288, guid: ed33155f06b4c0a46b624641a231c27b, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5750390021012620288, guid: ed33155f06b4c0a46b624641a231c27b, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5750390021012620288, guid: ed33155f06b4c0a46b624641a231c27b, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5750390021012620288, guid: ed33155f06b4c0a46b624641a231c27b, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5750390021012620288, guid: ed33155f06b4c0a46b624641a231c27b, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5750390021012620288, guid: ed33155f06b4c0a46b624641a231c27b, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5750390021012620288, guid: ed33155f06b4c0a46b624641a231c27b, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5750390021012620288, guid: ed33155f06b4c0a46b624641a231c27b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5750390021012620288, guid: ed33155f06b4c0a46b624641a231c27b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5750390021012620288, guid: ed33155f06b4c0a46b624641a231c27b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5750390021012620288, guid: ed33155f06b4c0a46b624641a231c27b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5750390021012620288, guid: ed33155f06b4c0a46b624641a231c27b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5750390021012620288, guid: ed33155f06b4c0a46b624641a231c27b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5750390021012620288, guid: ed33155f06b4c0a46b624641a231c27b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5750390021012620288, guid: ed33155f06b4c0a46b624641a231c27b, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5750390021012620288, guid: ed33155f06b4c0a46b624641a231c27b, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5750390021012620288, guid: ed33155f06b4c0a46b624641a231c27b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5750390021012620288, guid: ed33155f06b4c0a46b624641a231c27b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5750390021012620288, guid: ed33155f06b4c0a46b624641a231c27b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ed33155f06b4c0a46b624641a231c27b, type: 3}
+--- !u!114 &1743031425 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3083725581846185969, guid: ed33155f06b4c0a46b624641a231c27b, type: 3}
+  m_PrefabInstance: {fileID: 1743031424}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1743031426 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1294418869497982344, guid: ed33155f06b4c0a46b624641a231c27b, type: 3}
+  m_PrefabInstance: {fileID: 1743031424}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1745919926
 GameObject:
   m_ObjectHideFlags: 0
@@ -5564,6 +5677,12 @@ MonoBehaviour:
   worldParent: {fileID: 2099980234}
   flipDuration: 1
   snowParticle: {fileID: 564353400}
+  dialoguePanel: {fileID: 1743031426}
+  dialogueText: {fileID: 1743031425}
+  typingSpeed: 0.05
+  messageDisplayTime: 3
+  messageToDisplay: Axi:I Think i should go inside the house and look into what just
+    happened......
 --- !u!65 &1892069494
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12896,9 +13015,22 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2099980234}
     - target: {fileID: 1337012026540662840, guid: 1587d3477930f0d468531e59273aa820, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 1743031425}
+    - target: {fileID: 1337012026540662840, guid: 1587d3477930f0d468531e59273aa820, type: 3}
       propertyPath: snowParticle
       value: 
       objectReference: {fileID: 564353400}
+    - target: {fileID: 1337012026540662840, guid: 1587d3477930f0d468531e59273aa820, type: 3}
+      propertyPath: dialoguePanel
+      value: 
+      objectReference: {fileID: 1743031426}
+    - target: {fileID: 1337012026540662840, guid: 1587d3477930f0d468531e59273aa820, type: 3}
+      propertyPath: messageToDisplay
+      value: Axi:What? The ENTIRE world flipped upside down? i need to make it back
+        to the house..
+      objectReference: {fileID: 0}
     - target: {fileID: 1586123925960341295, guid: 1587d3477930f0d468531e59273aa820, type: 3}
       propertyPath: m_Name
       value: Flip
@@ -15359,3 +15491,4 @@ SceneRoots:
   - {fileID: 1394246292}
   - {fileID: 622616302}
   - {fileID: 1303179080}
+  - {fileID: 1743031424}
