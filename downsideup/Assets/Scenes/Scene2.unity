@@ -1329,15 +1329,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5146681718063874739, guid: a2896a5dcf724ce4d9a7d6ce9190e56f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 37.59341
+      value: 155.4
       objectReference: {fileID: 0}
     - target: {fileID: 5146681718063874739, guid: a2896a5dcf724ce4d9a7d6ce9190e56f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -305.48315
+      value: -355.4
       objectReference: {fileID: 0}
     - target: {fileID: 5146681718063874739, guid: a2896a5dcf724ce4d9a7d6ce9190e56f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 336.00482
+      value: 358.1
       objectReference: {fileID: 0}
     - target: {fileID: 5146681718063874739, guid: a2896a5dcf724ce4d9a7d6ce9190e56f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1404,6 +1404,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damageToBoss: 33
+  floatSpeed: 2
+  floatHeight: 0.3
+  rotationSpeed: {x: 0, y: 50, z: 0}
 --- !u!64 &1263178994
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1595,15 +1598,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5146681718063874739, guid: a2896a5dcf724ce4d9a7d6ce9190e56f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 121.32461
+      value: 121.3
       objectReference: {fileID: 0}
     - target: {fileID: 5146681718063874739, guid: a2896a5dcf724ce4d9a7d6ce9190e56f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -326.2984
+      value: -95.8
       objectReference: {fileID: 0}
     - target: {fileID: 5146681718063874739, guid: a2896a5dcf724ce4d9a7d6ce9190e56f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 331.6537
+      value: 280.1
       objectReference: {fileID: 0}
     - target: {fileID: 5146681718063874739, guid: a2896a5dcf724ce4d9a7d6ce9190e56f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1670,6 +1673,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damageToBoss: 33
+  floatSpeed: 2
+  floatHeight: 0.3
+  rotationSpeed: {x: 0, y: 50, z: 0}
 --- !u!64 &1523921723
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1794,7 +1800,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -5609321221556402741, guid: 79059d3f0aba6454e8bf31a5d4598c51, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5146681718063874739, guid: 79059d3f0aba6454e8bf31a5d4598c51, type: 3}
       propertyPath: m_LocalScale.x
@@ -2598,6 +2604,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damageToBoss: 34
+  floatSpeed: 2
+  floatHeight: 0.3
+  rotationSpeed: {x: 0, y: 50, z: 0}
 --- !u!64 &1999638624
 MeshCollider:
   m_ObjectHideFlags: 0

@@ -38,6 +38,9 @@ public class BossDamageObject : MonoBehaviour
             {
                 boss.TakeDamage(damageToBoss);
             }
+
+            // Despawn this object after hit
+            Destroy(gameObject);
         }
     }
 }
